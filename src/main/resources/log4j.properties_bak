@@ -1,0 +1,13 @@
+### set log levels ###
+log4j.rootLogger=ERROR
+
+### direct log messages to stdout ###
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+log4j.appender.A1.Target=System.out
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+log4j.appender.A1.layout.ConversionPattern=%-5p(%10c{1}) %m%n
+
+### application log config ###
+log4j.logger.com=ERROR,A1
+log4j.logger.org=ERROR,A1
+log4j.logger.java.sql=ERROR,A1
