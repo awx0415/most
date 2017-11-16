@@ -1,5 +1,7 @@
 package com.anwx.most.interceptor;
 
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -17,7 +19,10 @@ public class MyInterceptor {
 
     // 声明该方法是一个前置通知：在目标方法开始之前执行
     @Before("anyMethod()")
-    public void doAccessCheck() {
+    public void doAccessCheck(JoinPoint joinPoint) {
+        System.out.println(joinPoint.getArgs()[0]);
+
+        System.out.println(joinPoint.getTarget().getClass());
         System.out.println("前置通知");
     }
 
