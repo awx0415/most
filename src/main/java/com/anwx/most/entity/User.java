@@ -43,4 +43,9 @@ public class User {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
+    public String toString() {
+        System.err.println("------------进入toString--------------");
+        return "安文轩";
+    }
 }
