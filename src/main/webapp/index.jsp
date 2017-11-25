@@ -17,9 +17,8 @@
 </head>
 <body>
 <div class="container" >
-    <div class="row" style="background:url(static/img/login.jpg)">
-        <div class="col-md-8"></div>
-        <div class="col-md-4" style="padding: 30px; margin-top:200px; border: 1px solid black; background:#ffffff">
+    <div class="row" style="background:url(static/img/login.jpg) no-repeat; height: 40em;" >
+        <div style="margin-right: 50px;padding: 30px;margin-top:200px;border: 1px solid black;background:#ffffff;margin-left: 750px;">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
