@@ -9,13 +9,13 @@ import java.util.Map;
 /**
  * Created by pc on 2017-11-16.
  */
-public class GreatThanDateFilter implements IFilter{
+public class GreaterThanDateFilter implements IFilter{
 
     private String key;
     private String value;
     private DateTimeFormatter format = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
 
-    public GreatThanDateFilter(String key, String value) {
+    public GreaterThanDateFilter(String key, String value) {
         this.key = key;
         this.value = value;
     }
